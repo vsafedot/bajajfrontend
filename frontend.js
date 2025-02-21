@@ -8,7 +8,9 @@ export default function BFHLFrontend() {
   const [response, setResponse] = useState(null);
   const [filter, setFilter] = useState([]);
   const [error, setError] = useState("");
-
+ useEffect(() => {
+    document.title = "22BCS15779"; 
+  }, []);
   const handleSubmit = async () => {
     try {
       const parsedInput = JSON.parse(jsonInput);
