@@ -16,7 +16,7 @@ export default function BFHLFrontend() {
         throw new Error("Invalid JSON format. Must contain a 'data' array.");
       }
 
-      const res = await fetch("http://localhost:5000/bfhl", {
+      const res = await fetch("https://bajajtest-weax.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(parsedInput),
